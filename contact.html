@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>KFA - Contacts</title>
+    <meta charset="utf-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favico.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favico.jpg" type="image/x-icon" />
+    <meta name="description" content="Your description">
+    <meta name="keywords" content="Your keywords">
+    <meta name="author" content="Your name">
+    <meta name = "format-detection" content = "telephone=no" />
+    <!--CSS-->
+    <link rel="stylesheet" href="css/bootstrap.css" >
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact-form.css">
+    <link rel="stylesheet" href="fonts/font-awesome.css">
+    <!--JS-->
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/superfish.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.mobilemenu.js"></script>
+    <script src="js/jquery.equalheights.js"></script> 
+    <script src="js/TMForm.js"></script>
+    <script src="js/modal.js"></script>  
+    <script src="js/bootstrap-filestyle.js"></script> 
+    <script src="js/jquery.ui.totop.js"></script>
+    <script src="js/sForm.js"></script>
+  </head>
+  <body>
+    <!--header-->
+    <header class="indent">
+      <div class="container">
+          <h1 class="navbar-brand navbar-brand_"><a href="index.html"><img src="img/logo-q8f.png" alt="logo"></a></h1>
+          <h1>Kwuit Fighters Academy</h1>
+          <hr>
+          <nav class="navbar navbar-default navbar-static-top tm_navbar clearfix" role="navigation">
+              <ul class="nav sf-menu clearfix">
+                  <li><a href="index.html">Home</a></li>
+                  <li class="sub-menu"><a href="about.html">About</a><span></span>
+                      <ul class="submenu">
+                          <li><a href="#">History</a></li>
+                          <li><a href="#">Gallery</a><span></span>
+                              <ul class="submenu">
+                                  <li><a href="#">Lorem</a></li>
+                                  <li><a href="#">Dolor</a></li>
+                                  <li><a href="#">Sirtower</a></li>
+                              </ul> 
+                          </li>
+                          <li><a href="#">Events</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="classes.html">Our Classes</a></li>
+                  <li><a href="gallery.html">Gallery</a></li>
+                  <li class="active"><a href="contact.html">Contact</a></li>
+              </ul>
+          </nav>
+      </div>
+    </header>
+    <!--content-->
+    <div class="global indent">
+        <div class="formBox">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <h2 class="indent"><span>Get in Touch<br><em></em></span></h2>
+                        <div class="info">
+                            <h3>Address:</h3>
+                            <p>Salmiya - Millennium Hotel - fourth floor</p>
+                            <p>
+                              <span>
+                                <img src="img/page1_icon4.png" alt="Phone">
+                              </span> 
+                              +965 97496221
+                            </p>
+                            <p>
+                              <span><img src="img/page1_icon5.png" alt="Email"></span> 
+                              <a href="mailto:mike@kwuitfighters.com" class="email-text">
+                                contact@kwuitfighters.com
+                              </a>
+                            </p>        
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-8">
+                        <h2 class="indent"><span>Contact Form<br><em></em></span></h2>
+                        <form id="contact-form">
+                              <div class="contact-form-loader"></div>
+                              <fieldset>
+                                <label class="name form-div-1">
+                                  <input type="text" name="name" placeholder="Name:" value="" data-constraints="@Required @JustLetters"  />
+                                  <span class="empty-message">*This field is required.</span>
+                                  <span class="error-message">*This is not a valid name.</span>
+                                </label>
+                                <label class="email form-div-2">
+                                  <input type="text" name="email" placeholder="E-mail:" value="" data-constraints="@Required @Email" />
+                                  <span class="empty-message">*This field is required.</span>
+                                  <span class="error-message">*This is not a valid email.</span>
+                                </label>
+                                <label class="phone form-div-3">
+                                  <input type="text" name="phone" placeholder="Phone:" value="" data-constraints="@JustNumbers" />
+                                  <span class="empty-message">*This field is required.</span>
+                                  <span class="error-message">*This is not a valid phone.</span>
+                                </label>
+                                <label class="message form-div-4">
+                                  <textarea name="message" placeholder="Message:" data-constraints='@Required @Length(min=20,max=999999)'></textarea>
+                                  <span class="empty-message">*This field is required.</span>
+                                  <span class="error-message">*The message is too short.</span>
+                                </label>
+                                <!-- <label class="recaptcha"><span class="empty-message">*This field is required.</span></label> -->
+                                <div>
+                                  <a href="#" data-type="submit" class="btn-default btn2">submit</a>
+                                </div>
+                              </fieldset> 
+                              <div class="modal fade response-message">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                      <h4 class="modal-title">Modal title</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                      You message has been sent! We will be in touch soon.
+                                    </div>      
+                                  </div>
+                                </div>
+                              </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="map2">
+      <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3478.3943900318113!2d48.0421738!3d29.329435399999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fcf9dad5d2eb905%3A0x628508dc7326a44c!2z2YHZhtiv2YIg2YXZhNmK2YbZitmI2YU!5e0!3m2!1sar!2seg!4v1731697325921!5m2!1sar!2seg" 
+          width="600" 
+          height="450" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade"
+      >
+      </iframe>
+    </div>
+    </div>
+    <!--footer-->
+    <footer>
+        <div class="container">
+            <div class="newsletter-box">
+                <p class="title">Newsletter sign up:</p>
+                <form id="newsletter" accept-charset="utf-8">
+            <div class="success">Your subscribe request has been sent!</div>
+              <label class="email">
+                <input type="email" value="E-mail">
+                <span class="error">*This is not a valid email address.</span>
+              </label>
+                    <a href="#" data-type="submit" class="btn-default btn3">subscribe</a>
+          </form>
+            </div>
+            <ul class="foo_menu">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="classes.html">Our Classes</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li class="active"><a href="contact.html">Contacts</a></li>
+            </ul>
+            <figure><img src="img/logo-resized.jpg" alt=""></figure>
+            <p>Copyright &copy; <em id="copyright-year"></em> | <a href="provacy-policy.html">Privacy policy</a></p>
+        </div>
+    </footer>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/tm-scripts.js"></script>
+  </body>
+</html>
